@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+    font-family: cursive;
+}
+section.hero{
+    background: url(/images/spread.jpg) center no-repeat;
+    background-size: cover;
+    height: 100vh; 
+}
+.hero header{
+    background-color: #fff;
+    width: 75%;
+    height: 2.4em;
+    border-radius: 4em;
+    padding: 4%;
+    opacity: 0.9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5%;
+    position: absolute;
+}
+.hero header img{
+    width: 90%;
+}
+.hide-mobile{
+    display: none;
+}
+.menu-icon{
+    width: 14%; 
+    display: block;
+    position: fixed;
+    right: .5em;
+    top: .3em;
+}
+section.love-story{
+    width: 98%;
+    margin: 0 auto;
+}
+section.love-story header{
+    /* width: 99%; */
+    text-align: center;
+    margin: 15% 0;
+}
+section.love-story h4, 
+section.love-story span{
+    color: #81488e;
+    font-weight: normal;
+}
+div.pointer{
+    width: 4em;
+    height: 4em;
+    border: 5px solid #81488e;
+    border-radius: 50%;
+    margin: -14% auto 0;
+    display: grid;
+    place-items: center;
+}
+.pointer i{
+    color: #93c85c;
+    font-size: 2rem; 
+    /* transform: rotateX(180deg); */
+    cursor: pointer;
+    animation: points 1.5s infinite ease-in-out;
+}
+@keyframes points{
+    from{
+        transform: translateY(-5px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}
+.story-card{
+    border: 2px solid #81488e;
+    border-radius: 1.2em;
+    text-align: center;
+    margin-bottom: 12%;
+}
+.story-card p{ 
+    text-align: justify;
+    padding: 0 1em;
+}
+.story-card img{
+    width: 100%;
+    /* text-align: right; */
+    border-radius: 1em;
+}
+footer{
+    display: grid;
+    place-items: center; 
+} 
+footer img{
+    width: 100%; 
+    text-align: right;
+    margin-right: -40px;
+}
+.copyright p{
+    margin-top: 1em; 
+}
+.copyright p:last-child{
+    margin-top: 1em;
+    color: #716c72; 
+}
+div.scroll-up{
+    width: 5em;
+    background-color: #81488e;
+    height: 5em; 
+    border-radius: 50%;
+    border: 7px solid #fff;
+    margin-bottom: -14%;
+    position: relative;
+}
+div.copyright{
+    background-color: #0f0d16;
+    color: #fff;
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 2.5em 1em;
+    padding-bottom: 1.5em; 
+}
