@@ -84,8 +84,7 @@ div.pointer{
 }
 .pointer i{
     color: #93c85c;
-    font-size: 2rem; 
-    /* transform: rotateX(180deg); */
+    font-size: 2rem;  
     cursor: pointer;
     animation: points 1.5s infinite ease-in-out;
 }
@@ -108,8 +107,7 @@ div.pointer{
     padding: 0 1em;
 }
 .story-card img{
-    width: 100%;
-    /* text-align: right; */
+    width: 100%; 
     border-radius: 1em;
 }
 footer{
@@ -134,14 +132,24 @@ div.scroll-up{
     height: 5em; 
     border-radius: 50%;
     border: 7px solid #fff;
-    margin-bottom: -14%;
+    margin-bottom: -10%;
     position: relative;
+    text-align: center;
+}
+.scroll-up i{
+    color: #93c85c;
+    font-size: 2rem;  
+    cursor: pointer;
+    animation: points 1.5s infinite reverse ease-in-out;
 }
 div.copyright{
     background-color: #0f0d16;
     color: #fff;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     text-align: center;
     padding: 2.5em 1em;
     padding-bottom: 1.5em; 
+}
+.zmdi-favorite{
+    color: red;
 }
