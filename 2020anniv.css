@@ -54,7 +54,11 @@ div.years{
 }
 .years article img{
     width: 80%;
-    margin-top: -1em;
+    margin-top: -5.5em;
+}
+.years aside img{
+    width: 95%;
+    margin-top: -3em;
 }
 section.love-story{
     width: 98%;
@@ -70,8 +74,8 @@ section.love-story span{
     font-weight: normal;
 }
 div.pointer{
-    width: 4em;
-    height: 4em;
+    width: 4.5em;
+    height: 4.5em;
     border: 5px solid #81488e;
     border-radius: 50%;
     margin: -14% auto 0;
