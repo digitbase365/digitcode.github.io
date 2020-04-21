@@ -19,12 +19,13 @@ section.hero{
     align-items: center;
     margin: 1.5%;
     position: absolute;
+    padding: 0em 1em;
 }
 .hero header img{ 
-    width: 100%;
+    width: 80%;
     height: 100%; 
-    object-fit: fill;
-    position: absolute; 
+    /* object-fit: contain; */
+    /* position: absolute;  */
 }
 .hide-mobile{
     display: none;
