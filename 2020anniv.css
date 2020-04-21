@@ -89,7 +89,7 @@ div.pointer{
 }
 @keyframes points{
     from{
-        transform: translatpx);
+        transform: translateY(0px);
     }
     to{
         transform: translateY(30px);
