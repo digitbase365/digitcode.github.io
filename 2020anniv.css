@@ -65,12 +65,17 @@ section.love-story{
 }
 section.love-story header{ 
     text-align: center;
-    margin: 15% 0;
+    margin: 1.5em 0;
 }
 section.love-story h4, 
 section.love-story span{
     color: #81488e;
     font-weight: normal;
+}
+section.love-story span:nth-of-type(2){
+    display: block;
+    background-color: #81488e;
+    color: #fff;
 }
 div.pointer{
     width: 4.5em;
