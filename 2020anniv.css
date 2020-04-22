@@ -72,6 +72,10 @@ section.love-story span{
     color: #81488e;
     font-weight: normal;
 }
+section.love-story span:nth-of-type(1){
+    font-weight: bold;
+    letter-spacing: .2rem;
+}
 section.love-story span:nth-of-type(2){
     display: block;
     background-color: #81488e;
@@ -105,9 +109,10 @@ div.pointer{
     text-align: center;
     margin-bottom: 12%;
 }
+
 .story-card p{ 
     text-align: justify;
-    padding: 0 1em;
+    padding: 0 1em .5em;
 }
 .story-card img{
     width: 100%; 
