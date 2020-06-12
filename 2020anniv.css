@@ -4,13 +4,13 @@
     font-family:  'Baloo Paaji 2', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 section.hero{
-    background: url(/images/spread.jpg) center no-repeat;
+    background: url(/images/spread02.jpg) center no-repeat;
     background-size: cover;
-    height: 100vh; 
+    height: 95vh; 
 }
 .hero header{
     background-color: #fff;
-    width: 80%;
+    width: 300px;
     height: 2.4em;    
     border-radius: 4em; 
     opacity: 0.9;
@@ -29,36 +29,30 @@ section.hero{
     display: none;
 } 
 .menu-icon{
-    width: 12%; 
+    width: 40px; 
     height: 2.2em;
     display: block;
     position: fixed;
-    right: 0.8em;
+    right: .5em;
     top: .5em;
+    cursor: pointer;
 }
 div.years{ 
     width: 100%;
-    height: 7em; 
-    position: absolute; 
-    /* z-index: 5; */
-    bottom: 3em;
+    height: 11em; 
+    position: absolute;  
+    bottom: 4em;
     display: flex;
-    color: #fff; 
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;  
 }
 .years article, .years aside{ 
-    width: 50%;
-}
+    width: 45%; 
+} 
 .years img{
-    width: 100%; 
-}
-.years article img{
-    width: 80%;
-    margin-top: -5.5em;
-}
-.years aside img{
-    width: 95%;
-    margin-top: -3em;
-}
+    width: 150px;  
+} 
 section.love-story{
     width: 98%;
     margin: 0 auto;
@@ -103,6 +97,11 @@ div.pointer{
         transform: translateY(30px);
     }
 }
+div.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    grid-gap: 1em;
+}
 .story-card{
     border: 2px solid #81488e;
     border-radius: 1.2em;
@@ -115,17 +114,15 @@ div.pointer{
     padding: 0 1em .5em;
 }
 .story-card img{
-    width: 100%; 
+    width: 100%;  
     border-radius: 1em;
 }
 footer{
-    display: grid;
-    place-items: center; 
+    display: grid; 
 } 
-footer img{
-    width: 100%; 
-    text-align: right;
-    margin-right: -40px;
+footer img{ 
+    width: 80%;
+    text-align: right; 
 }
 .copyright p{
     margin-top: 1em; 
@@ -143,6 +140,7 @@ div.scroll-up{
     margin-bottom: -10%;
     position: relative;
     text-align: center;
+    justify-self: center;
 }
 .scroll-up i{
     color: #93c85c;
@@ -162,3 +160,134 @@ div.copyright{
     color: red;
     font-size: 1.2rem;
 }
+
+/*//////////////////////////MEDIA QUERIES /////////////////////*/
+@media screen and (min-width:768px){
+    
+    
+    div.years{  
+        height: 12em;  
+        bottom: 8em; 
+    }
+
+    div.pointer{
+        width: 6.5em;
+        height: 6.5em;  
+        margin: -9% auto 0;  
+    }
+    section.love-story header{
+        margin-top: 4em;
+    }
+    section.love-story h4{
+        font-size: large;
+        font-weight: bold;
+        letter-spacing: .5em;
+    }
+    section.love-story h1{
+        font-size: 1.5rem;
+        font-weight: bold; 
+    } 
+    div.scroll-up{
+        width: 7em;
+        height: 7em;    
+        margin-bottom: -7%; 
+    }
+    footer{
+        margin-top: 3em;
+    }
+    footer img{ 
+        width: 30%;
+        text-align: right;
+        margin-right: auto; 
+    }
+    div.copyright{
+        padding-top: .5em;
+        padding-bottom: 0;
+    }
+    div.earthlings{
+        margin-top: .5em 0 0;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 0 2em;  
+    } 
+    .copyright p{
+        margin: 0; 
+    }
+    .copyright > p{
+        margin: 0; 
+        margin-bottom: .4em;
+        letter-spacing: .2em; 
+    } 
+
+}
+
+@media screen and (min-width:1200px){
+    section.hero{ 
+        height: 100vh; 
+    }
+    .container{
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    div.years{  
+        height: 12em;  
+        bottom: 4.7em; 
+    }
+
+    div.pointer{
+        width: 6.5em;
+        height: 6.5em;  
+        margin: -5.5% auto 0;  
+    }
+    div.cards{
+        grid-gap: .5em;
+    }
+    section.love-story header{
+        margin-top: 4em;
+    }
+    section.love-story h4{
+        font-size: 1.7rem;
+        font-weight: bold;
+        letter-spacing: .5em;
+    }
+    section.love-story h1{
+        font-size: 2.2rem;
+        font-weight: bold; 
+    }
+    div.story-card h1{
+        font-size: 1.5em;
+    } 
+    div.scroll-up{
+        width: 7em;
+        height: 7em;    
+        margin-bottom: -4%; 
+    }
+    footer{
+        margin-top: 3em;
+    }
+    footer img{ 
+        width: 18%;
+        text-align: right;
+        margin-right: auto; 
+    }
+    div.copyright{
+        padding-top: .5em;
+        padding-bottom: 0;
+    }
+    div.earthlings{
+        margin-top: .5em 0 0; 
+        padding: 0; 
+    } 
+    .copyright p{
+        margin: 0; 
+    }
+    .copyright > p{
+        margin: 0; 
+        margin-bottom: 1.4em;
+        letter-spacing: .2em; 
+    }  
+}
+
+
