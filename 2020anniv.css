@@ -6,7 +6,7 @@
 section.hero{
     background: url(/images/spread02.jpg) center no-repeat;
     background-size: cover;
-    height: 95vh; 
+    height: 95vh;  
 }
 .hero header{
     background-color: #fff;
@@ -43,9 +43,10 @@ div.years{
     position: absolute;  
     bottom: 4em;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     color: #fff;  
+    overflow: hidden;
 }
 .years article, .years aside{ 
     width: 45%; 
@@ -220,6 +221,40 @@ div.copyright{
         letter-spacing: .2em; 
     } 
 
+    .pointer i{ 
+        font-size: 5rem;    
+    }
+    @keyframes points{
+        from{
+            transform: translateY(0px);
+        }
+        to{
+            transform: translateY(70px);
+        }
+    }
+    .years img:first-of-type{
+        animation: slide 2s ease-in-out forwards;
+    }
+    @keyframes slide{
+        from{
+            transform: translateX(-25px);
+        }
+        to{
+            transform: translateX(200px);
+        }
+    }
+    .years img:last-of-type{
+        animation: slade 2s ease-in-out forwards;
+    }
+    @keyframes slade{
+        from{
+            transform: translateX(35px);
+        }
+        to{
+            transform: translateX(-230px);
+        }
+    }
+
 }
 
 @media screen and (min-width:1200px){
@@ -233,7 +268,7 @@ div.copyright{
     
     div.years{  
         height: 12em;  
-        bottom: 4.7em; 
+        bottom: 3em; 
     }
 
     div.pointer{
@@ -288,6 +323,39 @@ div.copyright{
         margin-bottom: 1.4em;
         letter-spacing: .2em; 
     }  
+    .pointer i{ 
+        font-size: 7rem;    
+    }
+    @keyframes points{
+        from{
+            transform: translateY(0px);
+        }
+        to{
+            transform: translateY(90px);
+        }
+    }
+    .years img:first-of-type{
+        animation: slide 3s ease-in-out forwards;
+    }
+    @keyframes slide{
+        from{
+            transform: translateX(-125px);
+        }
+        to{
+            transform: translateX(500px);
+        }
+    }
+    .years img:last-of-type{
+        animation: slade 3s ease-in-out forwards;
+    }
+    @keyframes slade{
+        from{
+            transform: translateX(125px);
+        }
+        to{
+            transform: translateX(-520px);
+        }
+    }
 }
 
 
