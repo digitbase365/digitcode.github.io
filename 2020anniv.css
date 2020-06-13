@@ -413,6 +413,19 @@ and (orientation: landscape){
             transform: translateX(10px);
         }
     }
+
+
+    .pointer i{ 
+        font-size: 2rem;   
+    }
+    @keyframes points{
+        from{
+            transform: translateY(0px);
+        }
+        to{
+            transform: translateY(30px);
+        }
+    }
 }
 
 
