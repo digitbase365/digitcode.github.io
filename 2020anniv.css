@@ -163,9 +163,7 @@ div.copyright{
 }
 
 /*//////////////////////////MEDIA QUERIES /////////////////////*/
-@media screen and (min-width:768px){
-    
-    
+@media screen and (min-width:768px){ 
     div.years{  
         height: 12em;  
         bottom: 8em; 
@@ -237,10 +235,10 @@ div.copyright{
     }
     @keyframes slide{
         from{
-            transform: translateX(-25px);
+            transform: translateX(-300px);
         }
         to{
-            transform: translateX(200px);
+            transform: translateX(50px);
         }
     }
     .years img:last-of-type{
@@ -248,10 +246,10 @@ div.copyright{
     }
     @keyframes slade{
         from{
-            transform: translateX(35px);
+            transform: translateX(290px);
         }
         to{
-            transform: translateX(-230px);
+            transform: translateX(-60px);
         }
     }
 
@@ -339,10 +337,10 @@ div.copyright{
     }
     @keyframes slide{
         from{
-            transform: translateX(-125px);
+            transform: translateX(-525px);
         }
         to{
-            transform: translateX(500px);
+            transform: translateX(140px);
         }
     }
     .years img:last-of-type{
@@ -350,10 +348,65 @@ div.copyright{
     }
     @keyframes slade{
         from{
-            transform: translateX(125px);
+            transform: translateX(525px);
         }
         to{
-            transform: translateX(-520px);
+            transform: translateX(-170px);
+        }
+    }
+}
+
+/* MOBILE LANDSCAPE MEDIA QUERIES */
+@media screen 
+and (min-width: 414px) 
+and (max-width: 744px)
+and (orientation: landscape){
+    div.years{   
+        bottom: 2.2em;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end; 
+    } 
+    .years img{
+        width: 90px;  
+    } 
+    .years img:first-of-type{
+        width: 80px;  
+    }
+    div.pointer{
+    width: 4.5em;
+    height: 4.5em; 
+    margin: -5.8% auto 0;  
+    }
+    #hero{
+        height: 100vh;
+    }
+    div.scroll-up{
+        width: 4.2em; 
+        height: 4.2em;  
+        border: 4px solid #fff;
+        margin-bottom: -4.5%; 
+    }
+    .years img:first-of-type{
+        animation: slide 2s ease-in-out forwards;
+    }
+    @keyframes slide{
+        from{
+            transform: translateX(-300px);
+        }
+        to{
+            transform: translateX(-20px);
+        }
+    }
+    .years img:last-of-type{
+        animation: slade 2s ease-in-out forwards;
+    }
+    @keyframes slade{
+        from{
+            transform: translateX(290px);
+        }
+        to{
+            transform: translateX(10px);
         }
     }
 }
